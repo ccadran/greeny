@@ -66,6 +66,7 @@ body {
 }
 .hero .results-container ul li {
   margin: 10px 40px;
+  font-size: 1.2rem;
 }
 .hero .results-container .progression-bar-container {
   width: 500px;
@@ -95,7 +96,7 @@ body {
   background: #76ca61;
   border: none;
   font-family: darker-grotesque, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-radius: 15px;
 }
 
@@ -104,4 +105,5 @@ body {
   margin: 40px auto;
   width: 70%;
   justify-content: center;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=index.css.map */

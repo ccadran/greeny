@@ -37,6 +37,7 @@
             color: $green;
             li {
                 margin: 10px 40px;
+                font-size: 1.2rem;
             }
         }
         .progression-bar-container {
@@ -67,7 +68,7 @@
         background: $green;
         border: none;
         font-family: $font1;
-        font-size: 0.8rem;
+        font-size: 1rem;
         border-radius: 15px;
     }
 }
@@ -77,4 +78,5 @@
     margin: 40px auto;
     width: 70%;
     justify-content: center;
+    font-size: 1.3rem;
 }
