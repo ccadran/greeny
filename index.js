@@ -6,6 +6,7 @@ let answer3 = document.querySelector("#answer3");
 let inputs = document.querySelectorAll("input[type='checkbox']");
 const progressBar = document.getElementById("progression-bar");
 const discover = document.getElementById("discover");
+let textGreeny = document.getElementById("txt-results");
 
 let goodChoice = 0;
 let midChoice = 0;
@@ -152,7 +153,17 @@ function page2() {
     const percentttt = localStorage.getItem("percent");
     discover.addEventListener("click", () => {
         console.log(percentttt);
-        progressBar.style.width = ;
+        progressBar.style.width = percentttt + "%";
+        if (percentttt > 66) {
+            textGreeny.innerHTML =
+                "Félicitations ! Tu es officiellement un(e) “Greeny” ! Tu es conscient(e) de ce qui est bon pour la planète et tu adoptes de bonnes habitudes. N’hésite pas à consulter nos articles pour atteindre les 100% !";
+        } else if (percentttt > 33) {
+            textGreeny.innerHTML =
+                "Tu es sur la bonne voie pour devenir un(e) vrai(e) Greeny ! Tu commences à adopter de bonnes habitudes mais certaines sont encore à améliorer. Si tu le souhaites, tu peux te rendre sur notre page blog et consulter nos articles pour commencer dès maintenant.";
+        } else {
+            textGreeny.innerHTML =
+                "Attention ! Tes pratiques et habitudes ne sont pas optimales pour notre planète. Nous avons confiance en toi pour t’améliorer et devenir un vrai Greeny. Consulte nos articles  pour commencer dès maintenant.";
+        }
     });
 }
 

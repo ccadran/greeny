@@ -1,6 +1,6 @@
 .nav-container {
     width: 95%;
-    margin: 0 auto;
+    margin: 20px auto;
     nav {
         font-family: $font1;
         display: flex;
@@ -32,25 +32,27 @@
             justify-content: center;
             display: flex;
             list-style: none;
-
+            text-align: center;
             align-items: center;
             color: $green;
             li {
-                margin: 70px;
+                margin: 10px 40px;
             }
         }
         .progression-bar-container {
             width: 500px;
-            height: 50px;
-            border: 1px solid white;
+            height: 40px;
+            border: 2px solid white;
             margin: 0 auto;
             border-radius: 100px;
         }
-        .progression-bar {
+        #progression-bar {
+            transition: 0.5s;
             background: $green;
-            height: 50px;
+            height: 40px;
             width: 0%;
-            border-radius: 100px;
+            border-radius: 100px 0px 0px 100px;
+            z-index: -3;
         }
     }
 }
@@ -59,6 +61,7 @@
     margin-top: 50px;
     display: flex;
     #discover {
+        margin-bottom: 30px;
         padding: 10px 14px;
         color: $white;
         background: $green;
@@ -67,4 +70,11 @@
         font-size: 0.8rem;
         border-radius: 15px;
     }
+}
+
+#txt-results {
+    text-align: center;
+    margin: 40px auto;
+    width: 70%;
+    justify-content: center;
 }

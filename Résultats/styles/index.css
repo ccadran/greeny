@@ -1,95 +1,107 @@
 @font-face {
-    font-family: "darker-grotesque";
-    src: url(/assets/fonts/DarkerGrotesque-SemiBold.ttf);
+  font-family: "darker-grotesque";
+  src: url(/assets/fonts/DarkerGrotesque-SemiBold.ttf);
 }
 body {
-    background: rgb(13, 13, 13);
-    color: #fff;
-    overflow-x: hidden;
+  background: rgb(13, 13, 13);
+  color: #fff;
+  overflow-x: hidden;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
-    background: rgb(13, 13, 13);
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
+  background: rgb(13, 13, 13);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+#submit {
+  display: none;
 }
 
 .nav-container {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 20px auto;
 }
 .nav-container nav {
-    font-family: darker-grotesque, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  font-family: darker-grotesque, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-container nav img {
-    height: 25px;
+  height: 25px;
 }
 .nav-container nav ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-container nav ul li {
-    padding: 0 20px;
-    list-style: none;
+  padding: 0 20px;
+  list-style: none;
 }
 
 .hero {
-    font-family: darker-grotesque, sans-serif;
+  font-family: darker-grotesque, sans-serif;
 }
 .hero h1 {
-    text-transform: uppercase;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 70px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 70px;
 }
 .hero .results-container ul {
-    justify-content: center;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    color: #76ca61;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  color: #76ca61;
 }
 .hero .results-container ul li {
-    margin: 70px;
+  margin: 10px 40px;
 }
 .hero .results-container .progression-bar-container {
-    width: 500px;
-    height: 50px;
-    border: 1px solid white;
-    margin: 0 auto;
-    border-radius: 100px;
+  width: 500px;
+  height: 40px;
+  border: 2px solid white;
+  margin: 0 auto;
+  border-radius: 100px;
 }
-.hero .results-container .progression-bar {
-    background: #76ca61;
-    height: 50px;
-    width: 0%;
-    border-radius: 100px;
+.hero .results-container #progression-bar {
+  transition: 0.5s;
+  background: #76ca61;
+  height: 40px;
+  width: 0%;
+  border-radius: 100px 0px 0px 100px;
+  z-index: -3;
 }
 
 .btn-container {
-    justify-content: center;
-    margin-top: 50px;
-    display: flex;
-}
-#submit {
-    display: none;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
 }
 .btn-container #discover {
-    padding: 10px 14px;
-    color: #fff;
-    background: #76ca61;
-    border: none;
-    font-family: darker-grotesque, sans-serif;
-    font-size: 0.8rem;
-    border-radius: 15px;
-} /*# sourceMappingURL=index.css.map */
+  margin-bottom: 30px;
+  padding: 10px 14px;
+  color: #fff;
+  background: #76ca61;
+  border: none;
+  font-family: darker-grotesque, sans-serif;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+#txt-results {
+  text-align: center;
+  margin: 40px auto;
+  width: 70%;
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */

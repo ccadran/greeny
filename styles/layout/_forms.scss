@@ -22,14 +22,15 @@
             bottom: 15px;
         }
         .answer-container {
-            display: flex;
-            flex-direction: column;
+            display: block;
+            align-items: center;
             justify-content: center;
             text-align: left;
-            width: 30%;
+            width: 85%;
             margin: 0 auto;
             .answer {
                 align-items: center;
+                margin: 0 auto;
                 input {
                     margin-right: 30px;
                     margin-bottom: 20px;

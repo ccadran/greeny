@@ -26,7 +26,7 @@ li {
 
 .nav-container {
   width: 95%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .nav-container nav {
   font-family: darker-grotesque, sans-serif;
@@ -106,15 +106,16 @@ li {
   bottom: 15px;
 }
 .questionnaire .formulaires-container .answer-container {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  align-items: center;
   justify-content: center;
   text-align: left;
-  width: 30%;
+  width: 85%;
   margin: 0 auto;
 }
 .questionnaire .formulaires-container .answer-container .answer {
   align-items: center;
+  margin: 0 auto;
 }
 .questionnaire .formulaires-container .answer-container .answer input {
   margin-right: 30px;
