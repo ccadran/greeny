@@ -55,13 +55,13 @@ li {
             // }
         }
     }
-    &:after {
-        content: url(/assets/img/side-deco.png);
-        right: -250px;
-        top: 0px;
-        transform: rotate(40deg);
-        position: absolute;
-    }
+    // &:after {
+    //     content: url(/assets/img/side-deco.png);
+    //     right: -250px;
+    //     top: 0px;
+    //     transform: rotate(40deg);
+    //     position: absolute;
+    // }
     &::before {
         content: url(/assets/img/side-deco.png);
         left: -250px;

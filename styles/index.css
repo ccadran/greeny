@@ -65,13 +65,6 @@ li {
 .hero h1 span {
   position: relative;
 }
-.hero:after {
-  content: url(/assets/img/side-deco.png);
-  right: -250px;
-  top: 0px;
-  transform: rotate(40deg);
-  position: absolute;
-}
 .hero::before {
   content: url(/assets/img/side-deco.png);
   left: -250px;
@@ -122,4 +115,38 @@ li {
 .questionnaire .formulaires-container .answer-container .answer input {
   margin-right: 30px;
   margin-bottom: 20px;
+}
+
+footer {
+  font-family: darker-grotesque, sans-serif;
+  background: #76ca61;
+}
+footer .rs {
+  display: flex;
+  justify-content: center;
+}
+footer .rs li {
+  margin: 15px 50px;
+  font-size: 2rem;
+}
+footer .menu-footer {
+  display: flex;
+  justify-content: center;
+}
+footer .menu-footer li {
+  margin: 15px 50px;
+  font-size: 1.3rem;
+}
+footer .mentions-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+footer .mentions-container p {
+  margin: 10px 50px;
+}
+footer p {
+  text-align: center;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */

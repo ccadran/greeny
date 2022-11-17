@@ -1,0 +1,33 @@
+footer {
+    font-family: $font1;
+    background: $green;
+    .rs {
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 15px 50px;
+            font-size: 2rem;
+        }
+    }
+    .menu-footer {
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 15px 50px;
+            font-size: 1.3rem;
+        }
+    }
+    .mentions-container {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        p {
+            margin: 10px 50px;
+        }
+    }
+    p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
