@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "darker-grotesque";
+    src: url(/assets/fonts/DarkerGrotesque-SemiBold.ttf);
+}
+$font1: darker-grotesque, sans-serif;
+$black: rgb(13, 13, 13);
+$green: #76ca61;
+$white: #fff;
+body {
+    background: $black;
+    color: $white;
+    overflow-x: hidden;
+}
+.button {
+    background: $black;
+    color: $white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+}

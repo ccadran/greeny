@@ -1,0 +1,72 @@
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+.nav-container {
+    width: 95%;
+    margin: 0 auto;
+    nav {
+        font-family: $font1;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            height: 25px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                padding: 0 20px;
+                list-style: none;
+            }
+        }
+    }
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    position: relative;
+    margin-bottom: 200px;
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: $font1;
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 70px;
+
+        span {
+            position: relative;
+            // &::after {
+            //     position: absolute;
+            //     content: url(/assets/img/circle-tech.png);
+
+            //     width: 10px;
+            //     left: 0px;
+            //     top: -100px;
+            // }
+        }
+    }
+    &:after {
+        content: url(/assets/img/side-deco.png);
+        right: -250px;
+        top: 0px;
+        transform: rotate(40deg);
+        position: absolute;
+    }
+    &::before {
+        content: url(/assets/img/side-deco.png);
+        left: -250px;
+        top: 300px;
+        transform: rotate(40deg);
+        position: absolute;
+    }
+}
