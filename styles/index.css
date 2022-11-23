@@ -113,6 +113,8 @@ li {
   position: absolute;
   right: 25px;
   bottom: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .questionnaire .formulaires-container .answer-container {
   display: block;
