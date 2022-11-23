@@ -1,6 +1,7 @@
 footer {
     font-family: $font1;
     background: $green;
+    margin-top: 300px;
     .rs {
         display: flex;
         justify-content: center;
@@ -20,7 +21,7 @@ footer {
     .mentions-container {
         width: 60%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin: 0 auto;
         p {
             margin: 10px 50px;
@@ -28,6 +29,6 @@ footer {
     }
     p {
         text-align: center;
-        margin-bottom: 10px;
+        padding-bottom: 40px;
     }
 }

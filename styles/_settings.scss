@@ -6,6 +6,10 @@ $font1: darker-grotesque, sans-serif;
 $black: rgb(13, 13, 13);
 $green: #76ca61;
 $white: #fff;
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background: $black;
     color: $white;

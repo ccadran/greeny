@@ -2,6 +2,11 @@
   font-family: "darker-grotesque";
   src: url(/assets/fonts/DarkerGrotesque-SemiBold.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: rgb(13, 13, 13);
   color: #fff;
@@ -45,14 +50,17 @@ li {
   padding: 0 20px;
   list-style: none;
 }
+.nav-container nav ul li:hover {
+  cursor: pointer;
+  color: grey;
+}
 
 .hero {
   height: 70vh;
-  display: flex;
-  align-items: center;
+  display: block;
   padding-left: 70px;
   position: relative;
-  margin-bottom: 200px;
+  margin-top: 200px;
 }
 .hero h1 {
   text-transform: uppercase;
@@ -62,13 +70,17 @@ li {
   font-size: 80px;
   line-height: 70px;
 }
-.hero h1 span {
-  position: relative;
+.hero i {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  font-size: 5rem;
 }
 .hero::before {
   content: url(/assets/img/side-deco.png);
   left: -250px;
-  top: 300px;
+  top: 50px;
   transform: rotate(40deg);
   position: absolute;
 }
@@ -77,6 +89,8 @@ li {
   font-family: darker-grotesque, sans-serif;
   margin-top: 70px;
   margin-bottom: 100px;
+  color: rgb(13, 13, 13);
+  font-weight: bold;
 }
 .questionnaire h2 {
   display: flex;
@@ -120,6 +134,7 @@ li {
 footer {
   font-family: darker-grotesque, sans-serif;
   background: #76ca61;
+  margin-top: 300px;
 }
 footer .rs {
   display: flex;
@@ -148,5 +163,5 @@ footer .mentions-container p {
 }
 footer p {
   text-align: center;
-  margin-bottom: 10px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=index.css.map */

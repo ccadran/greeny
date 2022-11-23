@@ -153,6 +153,7 @@ function page2() {
     const percentttt = localStorage.getItem("percent");
     discover.addEventListener("click", () => {
         console.log(percentttt);
+        percents.innerHTML = `${percentttt}%`;
         progressBar.style.width = percentttt + "%";
         if (percentttt > 66) {
             textGreeny.innerHTML =

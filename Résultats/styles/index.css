@@ -9,6 +9,7 @@ body {
 }
 
 * {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -39,12 +40,26 @@ body {
   height: 25px;
 }
 .nav-container nav ul {
+  list-style: none;
   display: flex;
   justify-content: space-between;
 }
 .nav-container nav ul li {
   padding: 0 20px;
   list-style: none;
+  transition: 0.2s;
+}
+.nav-container nav ul li:hover {
+  cursor: pointer;
+  color: grey;
+}
+.nav-container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-container nav ul li a:hover {
+  cursor: pointer;
+  color: grey;
 }
 
 .hero {
@@ -64,6 +79,12 @@ body {
   font-size: 3rem;
   text-align: center;
   margin-top: 70px;
+}
+.hero h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  transition: 0.5s;
 }
 .hero .results-container ul {
   justify-content: center;
@@ -120,6 +141,7 @@ body {
 footer {
   font-family: darker-grotesque, sans-serif;
   background: #76ca61;
+  margin-top: 300px;
 }
 footer .rs {
   display: flex;
@@ -140,7 +162,7 @@ footer .menu-footer li {
 footer .mentions-container {
   width: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 auto;
 }
 footer .mentions-container p {
@@ -148,5 +170,5 @@ footer .mentions-container p {
 }
 footer p {
   text-align: center;
-  margin-bottom: 10px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=index.css.map */
