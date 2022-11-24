@@ -103,8 +103,9 @@ function check(checked = true) {
 }
 
 function btnClicked() {
-    if (i < 12) {
+    if (i <= 12) {
         btnValid.addEventListener("click", (e) => {
+            e.preventDefault();
             if (propal1.checked == true) {
                 badChoice += 0;
             }
@@ -133,24 +134,19 @@ function btnClicked() {
             console.log(percent);
             console.log(document.location.pathname);
             if (i >= 11) {
-                localStorage.setItem("percent", percent);
-                document.location.href = "/Résultats/results.html";
-
-                page2();
+                btnValid.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    document.location.href = "/Résultats/results.html";
+                    page2();
+                    localStorage.setItem("percent", percent);
+                });
             }
         });
     }
 }
-// if (document.location.pathname != "/R%C3%A9sultats/results.html") {
-//     var percent = 0;
-//     btnClicked();
-// } else {
-//     page2();
-//     btnClicked();
-// }
-btnClicked();
+
 function page2() {
-    const percentttt = localStorage.getItem("percent");
+    const percentttt = Math.floor(localStorage.getItem("percent"));
     discover.addEventListener("click", () => {
         console.log(percentttt);
         percents.innerHTML = `${percentttt}%`;
@@ -168,6 +164,7 @@ function page2() {
     });
 }
 
+btnClicked();
 if (document.location.pathname != "/index.html") {
     page2();
 }
